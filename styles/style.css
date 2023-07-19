@@ -5,6 +5,9 @@
   margin: 0;
 }
 
+/* body {
+  border: 2px solid red;
+} */
 h2 {
   text-align: center;
   font-family: Work Sans;
@@ -137,7 +140,6 @@ nav {
   position: relative;
   overflow: hidden;
   height: 80vh;
-  width: 100vw;
 }
 
 .hero-text-background-image {
@@ -432,6 +434,7 @@ nav {
   justify-content: center;
   height: 70vh;
   margin-bottom: 15rem;
+  padding-inline: 1rem;
 }
 
 .feature-text-2-heading span {
@@ -479,4 +482,75 @@ nav {
   justify-content: center;
   align-items: center;
   padding-left: 4rem;
+}
+
+/* Career Section */
+.career-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+
+.career-container {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.career-text-area {
+  padding-left: 16.25rem;
+}
+
+.career-heading {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 1.5rem;
+}
+
+.career-heading p {
+  text-align: left;
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+
+  margin-bottom: 2rem;
+}
+
+.jobs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs-short-description {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 3.75rem;
+}
+
+.job-button {
+  color: #ff42a5;
+  padding: 1.25rem 2.5rem;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  background: #fff;
+  text-decoration: none;
 }

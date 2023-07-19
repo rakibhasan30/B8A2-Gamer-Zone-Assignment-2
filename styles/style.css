@@ -109,24 +109,42 @@ nav {
 /*Hero Section*/
 
 .hero-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-inline: 1rem;
   max-width: 1400px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .hero-text-area {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 40%;
   position: relative;
+  flex-shrink: 0;
+}
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  width: 100vw;
 }
 
-.hero-text-background-image img {
+.hero-text-background-image {
   position: absolute;
+  height: 100%;
   top: 0;
-  transform: translate(-30%, -25%);
-  object-fit: cover;
-  z-index: -1;
+  left: 0;
 }
 .hero-text-pre-heading {
   text-align: left;
@@ -202,9 +220,17 @@ nav {
 }
 .hero-image-section {
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  flex-shrink: 0;
+}
+.hero-image {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: auto;
 }
 
 /* Gamer Section */
@@ -222,8 +248,8 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   max-width: 1400px;
+  padding-inline: 1rem;
 }
 
 .gamer-text-area {
@@ -231,6 +257,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  width: 40%;
 }
 .gamer-text-area a {
   margin-bottom: 1.5rem;
@@ -252,25 +279,21 @@ nav {
   font-weight: 700;
   line-height: 1rem;
 }
-
 .gamer-image {
+  width: 60%;
+
+  flex-shrink: 1;
+}
+.gamer-image img {
   width: 100%;
 }
 
 /* Funny Video Section */
-
-.funny-video-section {
-  display: flex;
-  flex-direction: column;
-  max-width: 1400px;
-  margin: 0 auto;
-  align-items: center;
-}
 .funny-video-heading {
   margin-top: 7.5rem;
   margin-bottom: 1rem;
   color: #0b0223;
-  text-align: right;
+  text-align: center;
   font-family: Work Sans;
   font-size: 3rem;
   font-style: normal;
@@ -291,26 +314,33 @@ nav {
 
 .funny-video-section p {
   margin-bottom: 3rem;
+  text-align: center;
 }
-.cards-container {
+.funny-video-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1400px;
   padding-inline: 1rem;
 }
 
-.card {
-  width: 342px;
-  height: 400px;
-  flex-shrink: 1;
-}
-.card-image {
-  width: 342px;
-  height: 400px;
-  flex-shrink: 0;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
+.card {
+  width: 24%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.card-image {
+  width: 100%;
+}
 .card p {
   margin-top: 1.5rem;
   text-align: left;

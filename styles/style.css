@@ -14,6 +14,30 @@ h2 {
   line-height: normal;
 }
 
+h3 {
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+p {
+  color: #534c64;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+
 /*Navigation Tab*/
 nav {
   background: #fff;
@@ -100,7 +124,7 @@ nav {
 .hero-text-background-image img {
   position: absolute;
   top: 0;
-  transform: translate(-30%, -24.5%);
+  transform: translate(-30%, -25%);
   object-fit: cover;
   z-index: -1;
 }
@@ -181,4 +205,114 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+/* Gamer Section */
+
+.gamer-section {
+  padding: 6rem 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+
+.gamer-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+}
+
+.gamer-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.gamer-text-area a {
+  margin-bottom: 1.5rem;
+}
+
+.gamer-section-bottom-text {
+  color: #534c64;
+  text-align: right;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.gamer-section-bottom-text span {
+  color: #534c64;
+  font-family: Work Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.gamer-image {
+  width: 100%;
+}
+
+/* Funny Video Section */
+
+.funny-video-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+.funny-video-heading {
+  margin-top: 7.5rem;
+  margin-bottom: 1rem;
+  color: #0b0223;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.funny-video-heading span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.funny-video-section p {
+  margin-bottom: 3rem;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-inline: 1rem;
+}
+
+.card {
+  width: 342px;
+  height: 400px;
+  flex-shrink: 1;
+}
+.card-image {
+  width: 342px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.card p {
+  margin-top: 1.5rem;
+  text-align: left;
+  flex-shrink: 0;
 }

@@ -115,6 +115,11 @@ nav {
 
 /*Hero Section*/
 
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+}
 .hero-container {
   position: relative;
   display: flex;
@@ -139,11 +144,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-.hero-section {
-  position: relative;
-  overflow: hidden;
-  height: 80vh;
 }
 
 .hero-text-background-image {
@@ -244,8 +244,7 @@ nav {
   width: 100%;
 }
 
-/* Gamer Section */
-
+/* Gamer Section  */
 .gamer-section {
   padding: 6rem 1rem;
   background: linear-gradient(
@@ -492,6 +491,7 @@ nav {
   margin-bottom: 7.5rem;
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
   width: 100%;
+  padding: 9.375rem 0;
 }
 
 .career-container {
@@ -502,7 +502,7 @@ nav {
   align-items: center;
 }
 .career-image {
-  width: 50%;
+  width: 40%;
 }
 .career-image img {
   width: 100%;
@@ -533,9 +533,6 @@ nav {
 
   margin-bottom: 2rem;
 }
-/* .career-image {
-  width: 50%;
-} */
 
 .jobs {
   display: flex;
@@ -696,4 +693,85 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 425px) {
+  /* Navigation Bar */
+  nav {
+    padding-top: 2rem;
+    box-shadow: none;
+  }
+  .logo-container {
+    width: auto;
+  }
+
+  .nav-container {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    width: 100%;
+  }
+  .social-button {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: rgba(11, 2, 35, 0.1);
+    padding: 0.6rem 4.5rem;
+  }
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    overflow: visible;
+    height: 100vh;
+  }
+  .hero-container {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    padding-inline: 0;
+  }
+  .hero-text-area {
+    padding-top: 5rem;
+    width: 90%;
+  }
+  .hero-image-section {
+    padding-top: 5rem;
+    width: 90%;
+    flex-direction: column;
+    justify-content: none;
+    flex-shrink: 0;
+  }
+  .hero-text-background-image {
+    display: none;
+  }
+  /* Gamer Section */
+  .gamer-section {
+    padding: 10rem 0;
+  }
+  .gamer-container {
+    flex-direction: column;
+  }
+  .gamer-text-area {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .gamer-text-area p {
+    text-align: center;
+  }
+  .gamer-section-bottom-text {
+    text-align: center;
+  }
+  .gamer-image {
+    width: 90%;
+  }
 }

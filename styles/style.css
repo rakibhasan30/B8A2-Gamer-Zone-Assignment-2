@@ -486,9 +486,7 @@ nav {
 
 /* Career Section */
 .career-section {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 7.5rem;
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
 }
 
@@ -553,4 +551,130 @@ nav {
   border-radius: 3rem;
   background: #fff;
   text-decoration: none;
+}
+
+/* Games Genre Section */
+
+.games-genre-section {
+  padding: 7.5rem;
+  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+
+.games-genre-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.game {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 50px;
+  background: #ffffff;
+  flex-shrink: 0;
+  padding: 10px 20px 10px 10px;
+}
+
+.game img {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+footer {
+  background: #0b0223;
+  padding: 7.5rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 3.75rem;
+  color: #fff;
+}
+
+.footer-container ul li {
+  list-style: none;
+}
+.footer-links-container {
+  margin: 4rem 0;
+}
+
+.footer-links {
+  color: #fff;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+.footer-logo {
+  color: #ffff;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.some-icon {
+  width: 40px;
+  height: 40px;
+}
+.useful-links {
+  margin: 4rem 0 1.75rem 0;
+}
+
+.useful-links ul li {
+  list-style: none;
+}
+
+.footer-useful-links {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.footer-note {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }

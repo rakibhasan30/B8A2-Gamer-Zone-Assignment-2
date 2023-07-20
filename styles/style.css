@@ -573,6 +573,7 @@ nav {
 .jobs {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .jobs-short-description {
@@ -771,7 +772,7 @@ footer {
   .hero-section {
     position: relative;
     overflow: visible;
-    height: 100vh;
+    height: auto;
   }
   .hero-container {
     flex-direction: column-reverse;
@@ -791,7 +792,6 @@ footer {
     padding-top: 5rem;
     width: 90%;
     flex-direction: column;
-    justify-content: none;
     flex-shrink: 0;
   }
   .hero-text-background-image {
@@ -799,7 +799,7 @@ footer {
   }
   /* Gamer Section */
   .gamer-section {
-    margin-top: 7rem;
+    margin-top: 1rem;
     background: none;
   }
   .gamer-container {
@@ -822,6 +822,8 @@ footer {
   .gamer-section-bottom-text span {
     line-height: normal;
   }
+  /* Funny Video Section */
+
   .funny-video-heading {
     margin-top: 1rem;
   }
@@ -843,6 +845,8 @@ footer {
     text-align: center;
     flex-shrink: 0;
   }
+
+  /* Featured Section */
   .featured-section {
     width: 100%;
     margin: 3rem auto;
@@ -893,8 +897,6 @@ footer {
     width: 90%;
     flex-direction: column;
     height: 100%;
-
-    padding-inline: auto;
     margin: 0 auto;
   }
   .feature-text-2 {
@@ -908,9 +910,11 @@ footer {
   .feature-text-2 p {
     text-align: center;
   }
+
+  /* Career Section */
+
   .career-section {
     margin-top: 10rem;
-
     background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
     width: 100%;
     padding: 3rem 0;
@@ -923,6 +927,9 @@ footer {
     gap: 4rem;
   }
   .career-text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 0;
     width: 95%;
   }
@@ -937,9 +944,8 @@ footer {
     padding-top: 2.5rem;
     text-align: center;
   }
-  .job-button {
-    margin-left: 70px;
-  }
+
+  /* Games Genre Section */
   .games-genre-section {
     padding: 5rem;
     background: linear-gradient(
@@ -948,6 +954,8 @@ footer {
       rgba(255, 66, 165, 0.03) 100%
     );
   }
+
+  /* Footer Section */
   footer {
     padding: 3rem 1rem;
   }
@@ -988,7 +996,8 @@ footer {
   }
 }
 
-@media screen and (min-width: 425.1px) and (max-width: 768px) {
+/* Media Query for Tablet Size */
+@media screen and (min-width: 426px) and (max-width: 768px) {
   /* Navigation Bar */
   nav {
     padding-top: 2rem;
@@ -1021,24 +1030,24 @@ footer {
   .hero-section {
     position: relative;
     overflow: visible;
-    height: 100vh;
+    height: auto;
   }
   .hero-container {
     flex-direction: column-reverse;
     height: auto;
     width: 100%;
+
     justify-content: center;
     padding-inline: 0;
   }
   .hero-text-area {
     padding-top: 5rem;
-    width: 90%;
+    width: auto;
   }
   .hero-image-section {
     padding-top: 5rem;
     width: 90%;
     flex-direction: column;
-    justify-content: none;
     flex-shrink: 0;
   }
   .hero-text-background-image {
@@ -1046,7 +1055,7 @@ footer {
   }
   /* Gamer Section */
   .gamer-section {
-    padding: 10rem 0 1rem 0;
+    padding: 5rem 0 1rem 0;
     background: none;
   }
   .gamer-container {
@@ -1069,19 +1078,18 @@ footer {
   .gamer-section-bottom-text span {
     line-height: normal;
   }
-  .funny-video-section {
-    padding-inline: auto;
-  }
+  /* Funny Video Section */
   .cards-container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
+    align-items: flex-start;
+    column-gap: 5rem;
+    width: 80%;
     margin: 0 auto;
   }
   .card {
-    width: 75%;
+    width: 40%;
     height: 100%;
     flex-shrink: 0;
   }
@@ -1090,16 +1098,18 @@ footer {
     text-align: center;
     flex-shrink: 0;
   }
+
+  /* Featured Section */
   .featured-section {
     width: 100%;
-    margin: 10rem auto;
+    margin: 5rem auto;
+    margin-bottom: 15rem;
   }
   .feature-1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    margin-bottom: 10rem;
+    height: 100%;
   }
   .feature-text-1 {
     width: 90%;
@@ -1114,34 +1124,38 @@ footer {
     margin-top: 1.5rem;
   }
   .feature-image-1 {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
     width: 70%;
     height: 100%;
   }
   .floating-image-1 {
     width: 30%;
     position: absolute;
-    transform: translate(0%, 220%);
-  }
-  .feature-image-2 img {
-    padding: 0;
-    width: 100%;
+    transform: translate(0%, 165%);
   }
   .feature-image-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
+  }
+  .feature-image-2 img {
+    width: 80%;
+    height: auto;
   }
 
   .floating-image-2 {
     width: 35%;
     position: absolute;
-    transform: translate(0%, 240%);
+    transform: translate(0%, 145%);
   }
   .feature-2 {
     width: 90%;
     flex-direction: column;
+    align-items: center;
     height: 100%;
-
-    padding-inline: auto;
     margin: 0 auto;
   }
   .feature-text-2 {
@@ -1155,8 +1169,11 @@ footer {
   .feature-text-2 p {
     text-align: center;
   }
+
+  /* Career Section */
   .career-section {
-    margin-bottom: 7.5rem;
+    margin-top: 5rem;
+
     background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
     width: 100%;
     padding: 3rem 0;
@@ -1169,7 +1186,11 @@ footer {
     gap: 4rem;
   }
   .career-text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 0;
+    margin: 0;
     width: 95%;
   }
   .career-image {
@@ -1180,20 +1201,31 @@ footer {
     margin-bottom: 3.5rem;
   }
   .career-heading p {
+    padding-inline: 2rem;
     padding-top: 2.5rem;
     text-align: center;
   }
+  .jobs {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
   .job-button {
     margin-left: 60px;
   }
+
+  /* Games Genre Section */
   .games-genre-section {
-    padding: 1rem;
+    padding: 4rem;
     background: linear-gradient(
       90deg,
       rgba(255, 66, 165, 0.03) 0%,
       rgba(255, 66, 165, 0.03) 100%
     );
   }
+
+  /* Footer */
   footer {
     padding: 3rem 1rem;
   }
@@ -1213,6 +1245,8 @@ footer {
 
   .footer-container ul {
     flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 2rem;
   }
 
   .social-media-icons {
@@ -1223,6 +1257,7 @@ footer {
     width: 40px;
     height: 40px;
   }
+
   .useful-links {
     margin: 4rem 0 3rem 0;
   }
